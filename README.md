@@ -22,7 +22,17 @@ After editing a PHP template, predefined content, or an asset, regenerate the de
 php scripts/export.php
 ```
 
-Commit the source changes, `public/`, and `vercel.json` together, then push to `main`. The Vercel project `berniedg` uses Framework Preset **Other**, Root Directory **./**, Output Directory **public**, and no build or install command. A connected GitHub repository deploys each push automatically.
+Commit the source changes, `public/`, and `vercel.json` together, then push to `main`. The Vercel project `berniedg` uses Framework Preset **Other**, Root Directory **./**, Output Directory **public**, and no build or install command.
+
+Live website: https://berniedg.vercel.app/
+
+Automatic deployment from GitHub is left off for now. To publish an update from this project folder after exporting, run:
+
+```powershell
+vercel deploy --prod
+```
+
+To enable automatic deployment later, connect the TEK-G GitHub account in Vercel's account Authentication settings, then link `TEK-G/berniedg` in the project's Git settings. A connected repository can deploy each push to `main` automatically.
 
 The exporter renders every visible page and all journal articles, copies the runtime assets, and generates the Vercel routes. Public navigation and JavaScript links use `.html` URLs, while existing valid `.php` links and `post.php?slug=...` URLs continue to work. Hidden PHP pages and the old contact URLs redirect as they do locally. Unknown static page and article URLs return a real 404; Vercel may block unmatched legacy `.php` URLs with a 403. Never edit generated `public/` files by hand; regenerate them from the PHP source. The exporter only replaces its own marked `public/` directory.
 

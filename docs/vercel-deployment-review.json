@@ -1,0 +1,63 @@
+{
+  "live": [
+    {
+      "path": "/",
+      "status": 403,
+      "matchesExport": false
+    },
+    {
+      "path": "/contact.html",
+      "status": 403,
+      "matchesExport": false
+    },
+    {
+      "path": "/post-care-starts-with-listening.html",
+      "status": 403,
+      "matchesExport": false
+    },
+    {
+      "path": "/assets/js/main.js",
+      "status": 403,
+      "matchesExport": false
+    },
+    {
+      "path": "/assets/downloads/De_Guzman_Resume_(2026).pdf",
+      "status": 403,
+      "matchesExport": false
+    },
+    {
+      "path": "/not-a-real-page.html",
+      "status": 403,
+      "matchesExport": null
+    }
+  ],
+  "comparisons": [
+    {
+      "width": 1440,
+      "matchesLocal": true,
+      "overflow": false
+    },
+    {
+      "width": 1024,
+      "matchesLocal": true,
+      "overflow": false
+    },
+    {
+      "width": 768,
+      "matchesLocal": true,
+      "overflow": false
+    },
+    {
+      "width": 375,
+      "matchesLocal": true,
+      "overflow": false
+    }
+  ],
+  "resumeFilename": "De_Guzman_Resume_(2026).pdf",
+  "mobileNavigationWorks": true,
+  "loadingWorks": true,
+  "confirmation": "Thank you for reaching out. Please allow some time for my response.",
+  "articleTitle": "Good care starts with listening",
+  "browserErrors": [],
+  "liveBrowserLimit": "Vercel bot protection shows a verification screen to the automated browser. Live checks use direct HTTP; browser checks use the identical exported files locally."
+}
