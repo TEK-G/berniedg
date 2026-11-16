@@ -1,14 +1,4 @@
-# Bernadette Jazmine MDG — healthcare portfolio
-
-A native PHP, HTML, CSS and vanilla JavaScript healthcare adaptation of [bryllim.com](https://bryllim.com/), personalized for **Bernadette Jazmine Mapindan De guzman**, with **Bernadette Jazmine MDG** as the display name. All content is predefined. No Composer, npm, framework, database, API, authentication, or server-side processing is needed.
-
-## Run locally
-
-From this directory:
-
-```powershell
-php -S 127.0.0.1:8000 -t .
-```
+# Bernadette
 
 Open http://127.0.0.1:8000. For XAMPP, place this folder in `htdocs`, start Apache, and open `http://localhost/bernie/`. For Laragon, put it in the web root and use its local site URL. All links and asset paths are relative, so installation in a subdirectory works. PHP 8.0+ is recommended.
 
