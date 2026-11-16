@@ -3,8 +3,11 @@
 <nav class="sidebar <?=$navMode==='mobile'?'mobile-menu':''?>" <?=$navMode==='mobile'?'id="mobile-menu" aria-label="Mobile navigation" inert':'aria-label="Main navigation"'?>>
     <div class="nav-top"><a href="index.php" class="brand" data-tour-target="brand" title="<?=e($site['full_name'])?>"><?=e($site['name'])?></a><?php if($navMode==='mobile'):?><button data-menu-close aria-label="Close menu"><?=icon('close')?></button><?php endif;?></div>
     <div class="nav-groups">
-    <?php foreach($navigation as $group): ?><div class="nav-group">
-        <?php foreach($group as [$key,$label,$symbol]): if(!($sectionVisibility[$key] ?? true)) continue; ?><a href="<?=e($key)?>.php" class="nav-link <?=$page===$key?'active':''?>" <?=$page===$key?'aria-current="page"':''?> data-tour-target="<?=e($key)?>"><?php if($symbol):?><?=icon($symbol)?><?php endif;?><?=e($label)?></a><?php endforeach;?>
+    <?php foreach($navigation as $group):
+        $group = array_filter($group, static fn(array $item): bool => ($sectionVisibility[$item[0]] ?? true) && ($navigationVisibility[$item[0]] ?? true));
+        if (!$group) continue;
+    ?><div class="nav-group">
+        <?php foreach($group as [$key,$label,$symbol]): ?><a href="<?=e($key)?>.php" class="nav-link <?=$page===$key?'active':''?>" <?=$page===$key?'aria-current="page"':''?> data-tour-target="<?=e($key)?>"><?php if($symbol):?><?=icon($symbol)?><?php endif;?><?=e($label)?></a><?php endforeach;?>
     </div><?php endforeach;?>
     </div>
     <div class="nav-bottom">

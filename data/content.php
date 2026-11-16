@@ -20,6 +20,13 @@ $sectionVisibility = [
     'affiliations' => false,
     'community_activity' => false,
 ];
+// Temporarily hide menu links without disabling their pages.
+$navigationVisibility = [
+    'shop' => false,
+    'blog' => false,
+    'gear' => false,
+    'resources' => false,
+];
 $profile = [
     'degree' => 'Bachelor of Science in Biology',
     'major' => 'Zoology',
