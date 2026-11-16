@@ -1,0 +1,57 @@
+/* Professional, consistent typography. Inter is self-hosted under the OFL. */
+@font-face {
+    font-family: 'Inter';
+    src: url('../fonts/inter-variable.ttf') format('truetype');
+    font-style: normal;
+    font-weight: 100 900;
+    font-display: swap;
+}
+
+:root {
+    --font-ui: 'Inter', 'Segoe UI', Arial, sans-serif;
+    --pixel: var(--font-ui);
+    --mono: var(--font-ui);
+}
+
+body,
+button,
+input,
+select,
+textarea,
+.service-title h2,
+.service-tags > span,
+.inquiry-form input,
+.inquiry-form select,
+.inquiry-form textarea,
+.quote-card blockquote,
+.quote-mark {
+    font-family: var(--font-ui);
+}
+
+h1, h2, h3, h4, .brand {
+    font-weight: 600;
+    letter-spacing: -.02em;
+}
+
+.hero h1.profile-name {
+    font-weight: 600;
+    line-height: 1.15;
+    letter-spacing: -.035em;
+}
+
+.brand {
+    line-height: 1.4;
+    letter-spacing: -.015em;
+}
+
+.sidebar .nav-top .brand { font-size: 14px; }
+.nav-group { font-weight: 400; }
+.nav-link.active { font-weight: 600; }
+.profile-full-name { font-size: 11.5px; }
+.page-heading h1, .post > h1 { font-weight: 600; letter-spacing: -.025em; }
+.section-heading h2 { font-weight: 600; letter-spacing: -.01em; }
+.stats-strip strong, .typing-stats b, .work-area-number { font-weight: 600; }
+.work-spotlight > h3, .work-overview > h2 { font-weight: 600; letter-spacing: -.025em; }
+.project-title h3, .project-feature h2, .service-title h2 { font-weight: 600; }
+.section-heading > a, .mini-heading, .eyebrow, .category-heading { font-weight: 500; }
+.button, .badge, .filter { font-weight: 500; }

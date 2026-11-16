@@ -1,0 +1,10 @@
+@keyframes fade-up{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}
+@keyframes dialog-in{from{opacity:0;transform:translateY(12px) scale(.985)}to{opacity:1;transform:translateY(0) scale(1)}}
+.enter{animation:fade-up .7s cubic-bezier(.16,1,.3,1) both;animation-delay:var(--delay,50ms)}
+.js-reveal{opacity:0;transform:translateY(12px);transition:opacity .7s cubic-bezier(.16,1,.3,1),transform .7s cubic-bezier(.16,1,.3,1)}
+.js-reveal.is-revealed{opacity:1;transform:none}
+dialog[open]{animation:dialog-in .3s cubic-bezier(.16,1,.3,1)}
+.fullscreen-dialog[open]{animation:fade-up .35s cubic-bezier(.16,1,.3,1)}
+.theme-anim,.theme-anim *, .theme-anim *::before,.theme-anim *::after{transition:background-color .5s ease,border-color .5s ease,color .5s ease,fill .5s ease,stroke .5s ease!important}
+::view-transition-old(root),::view-transition-new(root){animation:none;mix-blend-mode:normal}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation-duration:.01ms!important;animation-delay:0ms!important;transition-duration:.01ms!important;scroll-behavior:auto!important}.enter,.js-reveal{opacity:1!important;transform:none!important}.guide-cursor,.guide-prompt{display:none!important}.deck-card.is-center:hover{transform:none}.deck-card.is-left:hover{transform:translateX(-40%) translateY(14px) rotate(-16deg) scale(.88)}.deck-card.is-right:hover{transform:translateX(40%) translateY(14px) rotate(16deg) scale(.88)}}

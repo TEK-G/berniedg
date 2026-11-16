@@ -1,0 +1,148 @@
+{
+    "$schema": "https://openapi.vercel.sh/vercel.json",
+    "framework": null,
+    "buildCommand": "",
+    "installCommand": "",
+    "outputDirectory": "public",
+    "cleanUrls": false,
+    "trailingSlash": false,
+    "redirects": [
+        {
+            "source": "/collabs.php",
+            "destination": "/contact.php",
+            "permanent": false
+        },
+        {
+            "source": "/consulting.php",
+            "destination": "/contact.php",
+            "permanent": false
+        },
+        {
+            "source": "/certifications.php",
+            "destination": "/index.php",
+            "permanent": false
+        },
+        {
+            "source": "/recommendations.php",
+            "destination": "/index.php",
+            "permanent": false
+        },
+        {
+            "source": "/affiliations.php",
+            "destination": "/index.php",
+            "permanent": false
+        }
+    ],
+    "rewrites": [
+        {
+            "source": "/blog.php",
+            "destination": "/blog.html"
+        },
+        {
+            "source": "/contact.php",
+            "destination": "/contact.html"
+        },
+        {
+            "source": "/experience.php",
+            "destination": "/experience.html"
+        },
+        {
+            "source": "/gear.php",
+            "destination": "/gear.html"
+        },
+        {
+            "source": "/index.php",
+            "destination": "/index.html"
+        },
+        {
+            "source": "/leadership.php",
+            "destination": "/leadership.html"
+        },
+        {
+            "source": "/professional-experience.php",
+            "destination": "/professional-experience.html"
+        },
+        {
+            "source": "/projects.php",
+            "destination": "/projects.html"
+        },
+        {
+            "source": "/resources.php",
+            "destination": "/resources.html"
+        },
+        {
+            "source": "/shop.php",
+            "destination": "/shop.html"
+        },
+        {
+            "source": "/stack.php",
+            "destination": "/stack.html"
+        },
+        {
+            "source": "/post.php",
+            "has": [
+                {
+                    "type": "query",
+                    "key": "slug",
+                    "value": "care-starts-with-listening"
+                }
+            ],
+            "destination": "/post-care-starts-with-listening.html"
+        },
+        {
+            "source": "/post.php",
+            "has": [
+                {
+                    "type": "query",
+                    "key": "slug",
+                    "value": "a-more-human-checkup"
+                }
+            ],
+            "destination": "/post-a-more-human-checkup.html"
+        },
+        {
+            "source": "/post.php",
+            "has": [
+                {
+                    "type": "query",
+                    "key": "slug",
+                    "value": "beyond-the-clinic"
+                }
+            ],
+            "destination": "/post-beyond-the-clinic.html"
+        },
+        {
+            "source": "/post.php",
+            "has": [
+                {
+                    "type": "query",
+                    "key": "slug",
+                    "value": "questions-worth-bringing"
+                }
+            ],
+            "destination": "/post-questions-worth-bringing.html"
+        },
+        {
+            "source": "/post.php",
+            "has": [
+                {
+                    "type": "query",
+                    "key": "slug",
+                    "value": "plain-language"
+                }
+            ],
+            "destination": "/post-plain-language.html"
+        },
+        {
+            "source": "/post.php",
+            "has": [
+                {
+                    "type": "query",
+                    "key": "slug",
+                    "value": "a-practice-in-progress"
+                }
+            ],
+            "destination": "/post-a-practice-in-progress.html"
+        }
+    ]
+}
