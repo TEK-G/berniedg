@@ -1,0 +1,62 @@
+{
+  "layouts": [
+    {
+      "width": 1440,
+      "overflow": false,
+      "dark": false,
+      "background": "rgb(255, 255, 255)",
+      "sidebar": "rgb(241, 249, 242)",
+      "accent": "rgb(43, 112, 69)"
+    },
+    {
+      "width": 1024,
+      "overflow": false,
+      "dark": false,
+      "background": "rgb(255, 255, 255)",
+      "sidebar": "rgb(241, 249, 242)",
+      "accent": "rgb(43, 112, 69)"
+    },
+    {
+      "width": 768,
+      "overflow": false,
+      "dark": false,
+      "background": "rgb(255, 255, 255)",
+      "sidebar": "rgb(241, 249, 242)",
+      "accent": "rgb(43, 112, 69)"
+    },
+    {
+      "width": 375,
+      "overflow": false,
+      "dark": false,
+      "background": "rgb(255, 255, 255)",
+      "sidebar": "rgb(241, 249, 242)",
+      "accent": "rgb(43, 112, 69)"
+    }
+  ],
+  "accessibility": [
+    {
+      "route": "index.php",
+      "violations": []
+    },
+    {
+      "route": "consulting.php",
+      "violations": []
+    },
+    {
+      "route": "resources.php",
+      "violations": []
+    },
+    {
+      "route": "certifications.php",
+      "violations": []
+    }
+  ],
+  "errors": [],
+  "themeSwitch": {
+    "dark": {
+      "dark": true,
+      "background": "rgb(14, 29, 22)"
+    },
+    "lightPersists": true
+  }
+}

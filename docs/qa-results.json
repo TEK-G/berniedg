@@ -1,0 +1,490 @@
+{
+  "pages": [
+    {
+      "route": "shop",
+      "status": 200,
+      "heading": "guides"
+    },
+    {
+      "route": "blog",
+      "status": 200,
+      "heading": "journal"
+    },
+    {
+      "route": "gear",
+      "status": 200,
+      "heading": "my kit"
+    },
+    {
+      "route": "resources",
+      "status": 200,
+      "heading": "resources"
+    },
+    {
+      "route": "collabs",
+      "status": 200,
+      "heading": "collabs"
+    },
+    {
+      "route": "consulting",
+      "status": 200,
+      "heading": "consultations"
+    },
+    {
+      "route": "projects",
+      "status": 200,
+      "heading": "initiatives"
+    },
+    {
+      "route": "experience",
+      "status": 200,
+      "heading": "experience"
+    },
+    {
+      "route": "stack",
+      "status": 200,
+      "heading": "specialties"
+    },
+    {
+      "route": "certifications",
+      "status": 200,
+      "heading": "credentials"
+    },
+    {
+      "route": "recommendations",
+      "status": 200,
+      "heading": "kind words"
+    },
+    {
+      "route": "affiliations",
+      "status": 200,
+      "heading": "affiliations"
+    }
+  ],
+  "layouts": [
+    {
+      "width": 1440,
+      "scrollWidth": 1440,
+      "hero": {
+        "x": 520,
+        "y": 0,
+        "width": 624,
+        "height": 537.46875,
+        "top": 0,
+        "right": 1144,
+        "bottom": 537.46875,
+        "left": 520
+      },
+      "main": {
+        "x": 496,
+        "y": 0,
+        "width": 672,
+        "height": 3530.359375,
+        "top": 0,
+        "right": 1168,
+        "bottom": 3530.359375,
+        "left": 496
+      },
+      "heading": {
+        "x": 848,
+        "y": 112,
+        "width": 296,
+        "height": 41.59375,
+        "top": 112,
+        "right": 1144,
+        "bottom": 153.59375,
+        "left": 848
+      }
+    },
+    {
+      "width": 1024,
+      "scrollWidth": 1024,
+      "hero": {
+        "x": 312,
+        "y": 0,
+        "width": 624,
+        "height": 537.46875,
+        "top": 0,
+        "right": 936,
+        "bottom": 537.46875,
+        "left": 312
+      },
+      "main": {
+        "x": 288,
+        "y": 0,
+        "width": 672,
+        "height": 3530.359375,
+        "top": 0,
+        "right": 960,
+        "bottom": 3530.359375,
+        "left": 288
+      },
+      "heading": {
+        "x": 640,
+        "y": 112,
+        "width": 296,
+        "height": 41.59375,
+        "top": 112,
+        "right": 936,
+        "bottom": 153.59375,
+        "left": 640
+      }
+    },
+    {
+      "width": 768,
+      "scrollWidth": 768,
+      "hero": {
+        "x": 72,
+        "y": 53,
+        "width": 624,
+        "height": 537.46875,
+        "top": 53,
+        "right": 696,
+        "bottom": 590.46875,
+        "left": 72
+      },
+      "main": {
+        "x": 48,
+        "y": 53,
+        "width": 672,
+        "height": 3530.359375,
+        "top": 53,
+        "right": 720,
+        "bottom": 3583.359375,
+        "left": 48
+      },
+      "heading": {
+        "x": 400,
+        "y": 165,
+        "width": 296,
+        "height": 41.59375,
+        "top": 165,
+        "right": 696,
+        "bottom": 206.59375,
+        "left": 400
+      }
+    },
+    {
+      "width": 375,
+      "scrollWidth": 375,
+      "hero": {
+        "x": 24,
+        "y": 53,
+        "width": 327,
+        "height": 785.625,
+        "top": 53,
+        "right": 351,
+        "bottom": 838.625,
+        "left": 24
+      },
+      "main": {
+        "x": 0,
+        "y": 53,
+        "width": 375,
+        "height": 4807.8125,
+        "top": 53,
+        "right": 375,
+        "bottom": 4860.8125,
+        "left": 0
+      },
+      "heading": {
+        "x": 24,
+        "y": 457,
+        "width": 327,
+        "height": 30,
+        "top": 457,
+        "right": 351,
+        "bottom": 487,
+        "left": 24
+      }
+    }
+  ],
+  "interactions": [
+    {
+      "name": "No horizontal overflow at 1440",
+      "pass": true
+    },
+    {
+      "name": "No horizontal overflow at 1024",
+      "pass": true
+    },
+    {
+      "name": "No horizontal overflow at 768",
+      "pass": true
+    },
+    {
+      "name": "Mobile menu opens at 768",
+      "pass": true
+    },
+    {
+      "name": "Mobile menu closes at 768",
+      "pass": true
+    },
+    {
+      "name": "No horizontal overflow at 375",
+      "pass": true
+    },
+    {
+      "name": "Mobile menu opens at 375",
+      "pass": true
+    },
+    {
+      "name": "Mobile menu closes at 375",
+      "pass": true
+    },
+    {
+      "name": "Page shop responds",
+      "pass": true
+    },
+    {
+      "name": "No overflow shop",
+      "pass": true
+    },
+    {
+      "name": "Page blog responds",
+      "pass": true
+    },
+    {
+      "name": "No overflow blog",
+      "pass": true
+    },
+    {
+      "name": "Page gear responds",
+      "pass": true
+    },
+    {
+      "name": "No overflow gear",
+      "pass": true
+    },
+    {
+      "name": "Page resources responds",
+      "pass": true
+    },
+    {
+      "name": "No overflow resources",
+      "pass": true
+    },
+    {
+      "name": "Page collabs responds",
+      "pass": true
+    },
+    {
+      "name": "No overflow collabs",
+      "pass": true
+    },
+    {
+      "name": "Page consulting responds",
+      "pass": true
+    },
+    {
+      "name": "No overflow consulting",
+      "pass": true
+    },
+    {
+      "name": "Page projects responds",
+      "pass": true
+    },
+    {
+      "name": "No overflow projects",
+      "pass": true
+    },
+    {
+      "name": "Page experience responds",
+      "pass": true
+    },
+    {
+      "name": "No overflow experience",
+      "pass": true
+    },
+    {
+      "name": "Page stack responds",
+      "pass": true
+    },
+    {
+      "name": "No overflow stack",
+      "pass": true
+    },
+    {
+      "name": "Page certifications responds",
+      "pass": true
+    },
+    {
+      "name": "No overflow certifications",
+      "pass": true
+    },
+    {
+      "name": "Page recommendations responds",
+      "pass": true
+    },
+    {
+      "name": "No overflow recommendations",
+      "pass": true
+    },
+    {
+      "name": "Page affiliations responds",
+      "pass": true
+    },
+    {
+      "name": "No overflow affiliations",
+      "pass": true
+    },
+    {
+      "name": "Deck changes selected card",
+      "pass": true
+    },
+    {
+      "name": "Deck keyboard navigation",
+      "pass": true
+    },
+    {
+      "name": "Project details open",
+      "pass": true
+    },
+    {
+      "name": "Escape closes dialog",
+      "pass": true
+    },
+    {
+      "name": "Local FAQ filters",
+      "pass": true
+    },
+    {
+      "name": "FAQ answer opens",
+      "pass": true
+    },
+    {
+      "name": "Typing metrics update",
+      "pass": true
+    },
+    {
+      "name": "Typing accuracy",
+      "pass": true
+    },
+    {
+      "name": "Typing restart resets",
+      "pass": true
+    },
+    {
+      "name": "Lounge avatar moves",
+      "pass": true
+    },
+    {
+      "name": "Lounge local reply",
+      "pass": true
+    },
+    {
+      "name": "Dark theme works",
+      "pass": true
+    },
+    {
+      "name": "Resource filter",
+      "pass": true
+    },
+    {
+      "name": "Resource empty state",
+      "pass": true
+    },
+    {
+      "name": "Journal first page",
+      "pass": true
+    },
+    {
+      "name": "Journal grid layout",
+      "pass": true
+    },
+    {
+      "name": "Journal pagination",
+      "pass": true
+    },
+    {
+      "name": "Journal category",
+      "pass": true
+    },
+    {
+      "name": "Full article works",
+      "pass": true
+    },
+    {
+      "name": "Demo form feedback",
+      "pass": true
+    },
+    {
+      "name": "Demo is explicit",
+      "pass": true
+    },
+    {
+      "name": "Credential disclosure",
+      "pass": true
+    },
+    {
+      "name": "Guide download",
+      "pass": true
+    },
+    {
+      "name": "Mobile overflow shop",
+      "pass": true
+    },
+    {
+      "name": "Mobile overflow blog",
+      "pass": true
+    },
+    {
+      "name": "Mobile overflow gear",
+      "pass": true
+    },
+    {
+      "name": "Mobile overflow resources",
+      "pass": true
+    },
+    {
+      "name": "Mobile overflow collabs",
+      "pass": true
+    },
+    {
+      "name": "Mobile overflow consulting",
+      "pass": true
+    },
+    {
+      "name": "Mobile overflow projects",
+      "pass": true
+    },
+    {
+      "name": "Mobile overflow experience",
+      "pass": true
+    },
+    {
+      "name": "Mobile overflow stack",
+      "pass": true
+    },
+    {
+      "name": "Mobile overflow certifications",
+      "pass": true
+    },
+    {
+      "name": "Mobile overflow recommendations",
+      "pass": true
+    },
+    {
+      "name": "Mobile overflow affiliations",
+      "pass": true
+    },
+    {
+      "name": "Mobile overlay opens from menu",
+      "pass": true
+    },
+    {
+      "name": "Mobile menu inert under overlay",
+      "pass": true
+    },
+    {
+      "name": "Reduced motion visible",
+      "pass": true
+    },
+    {
+      "name": "Unknown article has 404",
+      "pass": true
+    }
+  ],
+  "errors": [],
+  "externalRequests": []
+}

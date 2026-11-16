@@ -1,0 +1,136 @@
+{
+  "layouts": [
+    {
+      "width": 1440,
+      "overflow": false,
+      "heading": "Bernadette Jazzmine MDG",
+      "headingFits": true,
+      "fullName": "Bernadette Jazzmine Mapindan De guzman",
+      "portraitLoaded": true,
+      "portrait": "assets/images/bernadette-portrait.jpg"
+    },
+    {
+      "width": 1024,
+      "overflow": false,
+      "heading": "Bernadette Jazzmine MDG",
+      "headingFits": true,
+      "fullName": "Bernadette Jazzmine Mapindan De guzman",
+      "portraitLoaded": true,
+      "portrait": "assets/images/bernadette-portrait.jpg"
+    },
+    {
+      "width": 768,
+      "overflow": false,
+      "heading": "Bernadette Jazzmine MDG",
+      "headingFits": true,
+      "fullName": "Bernadette Jazzmine Mapindan De guzman",
+      "portraitLoaded": true,
+      "portrait": "assets/images/bernadette-portrait.jpg"
+    },
+    {
+      "width": 375,
+      "overflow": false,
+      "heading": "Bernadette Jazzmine MDG",
+      "headingFits": true,
+      "fullName": "Bernadette Jazzmine Mapindan De guzman",
+      "portraitLoaded": true,
+      "portrait": "assets/images/bernadette-portrait.jpg"
+    }
+  ],
+  "pages": [
+    {
+      "route": "shop.php",
+      "status": 200,
+      "title": "Guides — Bernadette Jazzmine MDG",
+      "fullName": "Bernadette Jazzmine Mapindan De guzman",
+      "oldNamePresent": false
+    },
+    {
+      "route": "blog.php",
+      "status": 200,
+      "title": "Journal — Bernadette Jazzmine MDG",
+      "fullName": "Bernadette Jazzmine Mapindan De guzman",
+      "oldNamePresent": false
+    },
+    {
+      "route": "gear.php",
+      "status": 200,
+      "title": "My kit — Bernadette Jazzmine MDG",
+      "fullName": "Bernadette Jazzmine Mapindan De guzman",
+      "oldNamePresent": false
+    },
+    {
+      "route": "resources.php",
+      "status": 200,
+      "title": "Resources — Bernadette Jazzmine MDG",
+      "fullName": "Bernadette Jazzmine Mapindan De guzman",
+      "oldNamePresent": false
+    },
+    {
+      "route": "collabs.php",
+      "status": 200,
+      "title": "Collabs — Bernadette Jazzmine MDG",
+      "fullName": "Bernadette Jazzmine Mapindan De guzman",
+      "oldNamePresent": false
+    },
+    {
+      "route": "consulting.php",
+      "status": 200,
+      "title": "Consultations — Bernadette Jazzmine MDG",
+      "fullName": "Bernadette Jazzmine Mapindan De guzman",
+      "oldNamePresent": false
+    },
+    {
+      "route": "projects.php",
+      "status": 200,
+      "title": "Initiatives — Bernadette Jazzmine MDG",
+      "fullName": "Bernadette Jazzmine Mapindan De guzman",
+      "oldNamePresent": false
+    },
+    {
+      "route": "experience.php",
+      "status": 200,
+      "title": "Experience — Bernadette Jazzmine MDG",
+      "fullName": "Bernadette Jazzmine Mapindan De guzman",
+      "oldNamePresent": false
+    },
+    {
+      "route": "stack.php",
+      "status": 200,
+      "title": "Specialties — Bernadette Jazzmine MDG",
+      "fullName": "Bernadette Jazzmine Mapindan De guzman",
+      "oldNamePresent": false
+    },
+    {
+      "route": "certifications.php",
+      "status": 200,
+      "title": "Credentials — Bernadette Jazzmine MDG",
+      "fullName": "Bernadette Jazzmine Mapindan De guzman",
+      "oldNamePresent": false
+    },
+    {
+      "route": "recommendations.php",
+      "status": 200,
+      "title": "Kind words — Bernadette Jazzmine MDG",
+      "fullName": "Bernadette Jazzmine Mapindan De guzman",
+      "oldNamePresent": false
+    },
+    {
+      "route": "affiliations.php",
+      "status": 200,
+      "title": "Affiliations — Bernadette Jazzmine MDG",
+      "fullName": "Bernadette Jazzmine Mapindan De guzman",
+      "oldNamePresent": false
+    },
+    {
+      "route": "post.php?slug=care-starts-with-listening",
+      "status": 200,
+      "title": "Good care starts with listening — Bernadette Jazzmine MDG",
+      "fullName": "Bernadette Jazzmine Mapindan De guzman",
+      "oldNamePresent": false
+    }
+  ],
+  "errors": [],
+  "accessibility": [],
+  "identityAnswer": "This portfolio is personalized for Bernadette Jazzmine Mapindan De guzman, displayed as Bernadette Jazzmine MDG. The portrait is an illustrative stock photograph of a female healthcare professional. Clinical roles, organizations, credentials, and testimonials remain sample content."
+}

@@ -1,0 +1,120 @@
+[
+  {
+    "name": "Empty inquiry invalid",
+    "pass": true
+  },
+  {
+    "name": "Mobile modal restores visible menu trigger",
+    "pass": true
+  },
+  {
+    "name": "Mobile menu focus wraps",
+    "pass": true
+  },
+  {
+    "name": "Typing test finishes after 30 seconds",
+    "pass": true
+  },
+  {
+    "name": "Finished typing input disabled",
+    "pass": true
+  },
+  {
+    "name": "Internal link /index.php",
+    "pass": true
+  },
+  {
+    "name": "Internal link /shop.php",
+    "pass": true
+  },
+  {
+    "name": "Internal link /blog.php",
+    "pass": true
+  },
+  {
+    "name": "Internal link /gear.php",
+    "pass": true
+  },
+  {
+    "name": "Internal link /resources.php",
+    "pass": true
+  },
+  {
+    "name": "Internal link /collabs.php",
+    "pass": true
+  },
+  {
+    "name": "Internal link /consulting.php",
+    "pass": true
+  },
+  {
+    "name": "Internal link /projects.php",
+    "pass": true
+  },
+  {
+    "name": "Internal link /experience.php",
+    "pass": true
+  },
+  {
+    "name": "Internal link /stack.php",
+    "pass": true
+  },
+  {
+    "name": "Internal link /certifications.php",
+    "pass": true
+  },
+  {
+    "name": "Internal link /recommendations.php",
+    "pass": true
+  },
+  {
+    "name": "Internal link /affiliations.php",
+    "pass": true
+  },
+  {
+    "name": "Internal link /post.php?slug=care-starts-with-listening",
+    "pass": true
+  },
+  {
+    "name": "Internal link /post.php?slug=a-more-human-checkup",
+    "pass": true
+  },
+  {
+    "name": "Internal link /post.php?slug=beyond-the-clinic",
+    "pass": true
+  },
+  {
+    "name": "Internal link /assets/downloads/visit-preparation.txt",
+    "pass": true
+  },
+  {
+    "name": "Internal link /assets/downloads/appointment-notes.txt",
+    "pass": true
+  },
+  {
+    "name": "Internal link /assets/downloads/care-team.txt",
+    "pass": true
+  },
+  {
+    "name": "Internal link /post.php?slug=questions-worth-bringing",
+    "pass": true
+  },
+  {
+    "name": "Internal link /post.php?slug=plain-language",
+    "pass": true
+  },
+  {
+    "name": "Internal link /post.php?slug=a-practice-in-progress",
+    "pass": true
+  },
+  {
+    "name": "Mobile homepage automated accessibility",
+    "pass": true,
+    "violations": []
+  },
+  {
+    "name": "Search dialog automated accessibility",
+    "pass": true,
+    "violations": []
+  }
+]

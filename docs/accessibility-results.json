@@ -1,0 +1,22 @@
+[
+  {
+    "route": "index",
+    "violations": []
+  },
+  {
+    "route": "blog",
+    "violations": []
+  },
+  {
+    "route": "consulting",
+    "violations": []
+  },
+  {
+    "route": "resources",
+    "violations": []
+  },
+  {
+    "route": "certifications",
+    "violations": []
+  }
+]
