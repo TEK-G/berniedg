@@ -24,7 +24,7 @@ php scripts/export.php
 
 Commit the source changes, `public/`, and `vercel.json` together, then push to `main`. The Vercel project `berniedg` uses Framework Preset **Other**, Root Directory **./**, Output Directory **public**, and no build or install command. A connected GitHub repository deploys each push automatically.
 
-The exporter renders every visible page and all journal articles, copies the runtime assets, and generates the Vercel routes. Existing `.php` links and `post.php?slug=...` URLs continue to work. Hidden pages and the old contact URLs redirect as they do locally. Unknown pages and article slugs return a real 404. Never edit generated `public/` files by hand; regenerate them from the PHP source. The exporter only replaces its own marked `public/` directory.
+The exporter renders every visible page and all journal articles, copies the runtime assets, and generates the Vercel routes. Public navigation and JavaScript links use `.html` URLs, while existing valid `.php` links and `post.php?slug=...` URLs continue to work. Hidden PHP pages and the old contact URLs redirect as they do locally. Unknown static page and article URLs return a real 404; Vercel may block unmatched legacy `.php` URLs with a 403. Never edit generated `public/` files by hand; regenerate them from the PHP source. The exporter only replaces its own marked `public/` directory.
 
 The contact form remains a browser-only interaction; deploying does not enable email delivery.
 

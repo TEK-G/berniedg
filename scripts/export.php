@@ -57,6 +57,15 @@ $aliases = ['collabs.php' => 'contact.php', 'consulting.php' => 'contact.php'];
 foreach ($sectionVisibility as $pageName => $visible) {
     if (!$visible && is_file($projectRoot.'/'.$pageName.'.php')) $aliases[$pageName.'.php'] = 'index.php';
 }
+$staticLinks = [];
+foreach (glob($projectRoot.'/*.php') as $sourceFile) {
+    $entry = basename($sourceFile);
+    if ($entry === 'post.php') continue;
+    $staticLinks[$entry] = basename($aliases[$entry] ?? $entry, '.php').'.html';
+}
+foreach ($articles as $article) {
+    $staticLinks['post.php?slug='.$article['slug']] = 'post-'.$article['slug'].'.html';
+}
 $rewrites = [];
 $redirects = [];
 foreach ($aliases as $from => $to) {
@@ -68,7 +77,7 @@ foreach (glob($projectRoot.'/*.php') as $sourceFile) {
     $entry = basename($sourceFile);
     if (isset($aliases[$entry]) || $entry === 'post.php') continue;
     $filename = basename($entry, '.php').'.html';
-    file_put_contents($output.'/'.$filename, renderPage($entry));
+    file_put_contents($output.'/'.$filename, strtr(renderPage($entry), $staticLinks));
     $rewrites[] = ['source' => '/'.$entry, 'destination' => '/'.$filename];
     $pageCount++;
 }
@@ -76,12 +85,12 @@ foreach ($articles as $article) {
     $slug = $article['slug'];
     if (!preg_match('/^[a-z0-9-]+$/', $slug)) throw new RuntimeException('Invalid article slug.');
     $filename = 'post-'.$slug.'.html';
-    file_put_contents($output.'/'.$filename, renderPage('post.php', ['slug' => $slug]));
+    file_put_contents($output.'/'.$filename, strtr(renderPage('post.php', ['slug' => $slug]), $staticLinks));
     $rewrites[] = ['source' => '/post.php', 'has' => [['type' => 'query', 'key' => 'slug', 'value' => $slug]], 'destination' => '/'.$filename];
     $pageCount++;
 }
 // No catch-all rewrite: unknown pages/slugs keep a real HTTP 404 status.
-file_put_contents($output.'/404.html', renderPage('post.php'));
+file_put_contents($output.'/404.html', strtr(renderPage('post.php'), $staticLinks));
 
 $assetRoot = $projectRoot.'/assets';
 $assets = new RecursiveIteratorIterator(new RecursiveDirectoryIterator($assetRoot, FilesystemIterator::SKIP_DOTS));
@@ -90,7 +99,11 @@ foreach ($assets as $asset) {
     $relative = substr($asset->getPathname(), strlen($assetRoot) + 1);
     $destination = $output.'/assets/'.$relative;
     if (!is_dir(dirname($destination))) mkdir(dirname($destination), 0755, true);
-    copy($asset->getPathname(), $destination);
+    if (strtolower($asset->getExtension()) === 'js') {
+        file_put_contents($destination, strtr(file_get_contents($asset->getPathname()), $staticLinks));
+    } else {
+        copy($asset->getPathname(), $destination);
+    }
 }
 $config = [
     '$schema' => 'https://openapi.vercel.sh/vercel.json',
