@@ -26,7 +26,7 @@ $title = $documentTitle ?? ($page === 'home' ? $site['name'].' — Patient Safet
     <link rel="stylesheet" href="assets/css/theme.css?v=contact-loading-1">
     <link rel="stylesheet" href="assets/css/typography.css?v=inter-1">
     <script>try{const t=localStorage.getItem('care-theme-green')||'light';document.documentElement.dataset.theme=t;document.documentElement.classList.toggle('dark',t==='dark'||(t==='system'&&matchMedia('(prefers-color-scheme:dark)').matches));}catch(e){}</script>
-    <script src="assets/js/main.js?v=contact-confirmation-2" defer></script>
+    <script src="assets/js/main.js?v=remove-lounge-1" defer></script>
     <script src="assets/js/animations.js?v=contact-1" defer></script>
 </head>
 <body data-page="<?=e($page)?>">

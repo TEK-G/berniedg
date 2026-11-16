@@ -71,7 +71,6 @@
     dialog.showModal();document.body.classList.add('is-locked');window.dispatchEvent(new CustomEvent('care-overlay',{detail:{open:true}}));
     if(id==='ask-dialog') { renderAnswers('');requestAnimationFrame(()=>$('[data-ask-input]').focus()); }
     if(id==='typing-dialog') { resetTyping();requestAnimationFrame(()=>$('[data-typing-input]').focus()); }
-    if(id==='lounge-dialog') requestAnimationFrame(()=>$('.lounge-board').focus());
   }
   window.openCareDialog = openDialog;
   $$('[data-open]').forEach(button=>button.addEventListener('click',()=>openDialog(button.dataset.open,button)));
@@ -178,9 +177,4 @@
   typingInput.addEventListener('keydown',event=>{const key=$$('[data-key]').find(el=>el.dataset.key===event.key.toLowerCase());if(key){key.classList.add('is-pressed');setTimeout(()=>key.classList.remove('is-pressed'),140);}});
   $('[data-typing-reset]').addEventListener('click',()=>{resetTyping();typingInput.focus();});
 
-  // Local lounge: a movable avatar and transparent, predefined conversation prompts.
-  const board=$('.lounge-board'),avatar=$('[data-lounge-avatar]');let avatarX=0,avatarY=0;
-  board.addEventListener('keydown',event=>{const key=event.key.toLowerCase();const directions={arrowup:[0,-12],w:[0,-12],arrowdown:[0,12],s:[0,12],arrowleft:[-12,0],a:[-12,0],arrowright:[12,0],d:[12,0]};if(!directions[key])return;event.preventDefault();const [x,y]=directions[key];avatarX=Math.max(-board.clientWidth*.24+4,Math.min(board.clientWidth*.76-48,avatarX+x));avatarY=Math.max(-board.clientHeight*.5+8,Math.min(board.clientHeight*.5-65,avatarY+y));avatar.style.transform=`translate(${avatarX}px,${avatarY}px)`;});
-  const replies={hello:'Hello, and welcome. It’s lovely to have you here. This little lounge is yours to explore.',explore:'Try the journal for a few thoughtful notes, the guides for free downloads, or the initiatives for three ideas about better care.',care:'A kind thought for today: you don’t need to have all the right words. Sometimes a little space to listen is enough.'};
-  $$('[data-lounge-prompt]').forEach(button=>button.addEventListener('click',()=>{$('.lounge-message').textContent=replies[button.dataset.loungePrompt];}));
 })();

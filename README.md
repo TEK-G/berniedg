@@ -55,11 +55,11 @@ The “Let’s connect” navigation item opens `contact.php`, which combines pr
 
 ## Interactions
 
-Desktop sidebar; full-screen mobile menu; system/light/dark themes with circular reveal where supported; optional UI sound; welcome tour; interactive three-card deck (click, arrows, swipe); project and credential dialogs; local FAQ search (`Ctrl/⌘ + K`); 30-second typing test (`Ctrl/⌘ + J`); local resource search; journal pagination, categories and list/grid layouts; expandable FAQs; functional downloads; client-side form validation and demo feedback; local community lounge with movable avatar and predefined replies.
+Desktop sidebar; full-screen mobile menu; system/light/dark themes with circular reveal where supported; optional UI sound; welcome tour; interactive three-card deck (click, arrows, swipe); project and credential dialogs; local FAQ search (`Ctrl/⌘ + K`); 30-second typing test (`Ctrl/⌘ + J`); local resource search; journal pagination, categories and list/grid layouts; expandable FAQs; functional downloads; client-side form validation and confirmation feedback.
 
 Dialogs support native focus trapping, Escape, close controls, backdrop dismissal, and focus restoration. The menu supports a keyboard focus loop. Reduced-motion preferences suppress transitions, scroll reveals, the guide pointer, and portrait motion. Sound defaults to off.
 
-Only theme/sound preferences use browser local storage. Tour state uses session storage. Form fields and lounge replies are never persisted or transmitted. There are no live visitor counts or real appointments.
+Only theme/sound preferences use browser local storage. Tour state uses session storage. Form fields are never persisted or transmitted. There are no live visitor counts or real appointments.
 
 The portrait automatically alternates between pixel styling and the original photo every seven seconds, starting with pixel styling. A 0.9-second crossfade blends the two views without moving or changing the crop. The source image is never modified. Cycling pauses when the tab is hidden; reduced-motion preferences keep the pixel view static.
 
