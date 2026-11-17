@@ -50,7 +50,7 @@
 </section>
 <?php endif; ?>
 <section class="home-section" id="experience">
-    <?php sectionHeading('03','professional experience','full experience','professional-experience.php'); ?>
+    <?php sectionHeading('','professional experience','full experience','professional-experience.php'); ?>
     <article class="work-spotlight">
         <span class="eyebrow">CURRENT ROLE · PATIENT SAFETY</span>
         <h3><?=e($profile['role'])?></h3>

@@ -35,7 +35,7 @@ function icon(string $name, string $class = ''): string {
     return '<svg class="icon '.e($class).'" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">'.($paths[$name] ?? $paths['plus']).'</svg>';
 }
 function sectionHeading(string $number, string $title, string $linkText, string $href): void { ?>
-    <div class="section-heading"><h2><?=e($number)?> — <?=e($title)?></h2><a href="<?=e($href)?>"><?=e($linkText)?> →</a></div>
+    <div class="section-heading"><h2><?=e($number === '' ? $title : $number.' — '.$title)?></h2><a href="<?=e($href)?>"><?=e($linkText)?> →</a></div>
 <?php }
 function credentialCard(array $item, int $index): void { ?>
     <button class="credential-card" data-credential="<?=$index?>"><span class="credential-icon"><?=icon($item['icon'])?></span><strong><?=e($item['name'])?></strong><span><?=e($item['issuer'])?></span><small>❬ VIEW DETAILS ❭</small></button>
