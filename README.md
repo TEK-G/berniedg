@@ -42,7 +42,7 @@ The contact form remains a browser-only interaction; deploying does not enable e
 
 - `data/content.php`: profile, navigation, journal articles, projects, experience, specialties, credentials, sample quotations, resources, services, and FAQ answers.
 - `$sectionVisibility` in `data/content.php` temporarily hides Credentials, Kind words, Affiliations, and the community activity pattern. Their content is retained; set the relevant flag to `true` to restore it. Hidden pages redirect to the homepage.
-- `$navigationVisibility` temporarily hides Guides, Journal, My kit, and Resources from the desktop and mobile menus while keeping their pages available. Set a link's flag to `true` to restore it.
+- `$navigationVisibility` temporarily hides Guides, Journal, My kit, Resources, and Initiatives from the desktop and mobile menus while keeping their pages available. Set a link's flag to `true` to restore it.
 - `$homepageVisibility` temporarily hides the Journal and Initiatives sections from the homepage. Their content and standalone pages are preserved; set the relevant flag to `true` to restore a section.
 - `index.php`: homepage composition.
 - `includes/`: shared header, navigation, interior page layouts, forms, footer, and dialogs.

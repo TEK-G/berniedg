@@ -26,6 +26,7 @@ $navigationVisibility = [
     'blog' => false,
     'gear' => false,
     'resources' => false,
+    'projects' => false,
 ];
 // Temporarily hide homepage sections while retaining their pages and content.
 $homepageVisibility = [
