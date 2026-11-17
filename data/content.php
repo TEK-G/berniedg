@@ -27,6 +27,11 @@ $navigationVisibility = [
     'gear' => false,
     'resources' => false,
 ];
+// Temporarily hide homepage sections while retaining their pages and content.
+$homepageVisibility = [
+    'journal' => false,
+    'initiatives' => false,
+];
 $profile = [
     'degree' => 'Bachelor of Science in Biology',
     'major' => 'Zoology',

@@ -28,11 +28,14 @@
     <button data-info="initiatives"><strong>3 ideas <sup>↗</sup></strong><span>FOR BETTER CARE</span></button>
 </section>
 <div class="dot-divider" aria-hidden="true"></div>
+<?php if($homepageVisibility['journal']): ?>
 <section class="home-section journal-section" id="journal">
     <?php sectionHeading('01','journal','all posts','blog.php'); ?>
     <div class="journal-list"><?php foreach(array_slice($articles,0,3) as $item):?><a class="journal-row" href="post.php?slug=<?=e($item['slug'])?>"><div><h3><?=e($item['title'])?></h3><p><?=e($item['excerpt'])?></p></div><time><?=e($item['date'])?></time></a><?php endforeach;?></div>
     <div class="section-dots" aria-hidden="true"></div>
 </section>
+<?php endif; ?>
+<?php if($homepageVisibility['initiatives']): ?>
 <section class="home-section" id="initiatives">
     <?php sectionHeading('02','initiatives','all initiatives','projects.php'); ?>
     <div class="deck" aria-label="Care initiatives" aria-roledescription="carousel" data-deck tabindex="0">
@@ -45,6 +48,7 @@
     </div>
     <p class="sr-only" data-deck-status aria-live="polite">Open Door selected. Use left and right arrows to explore initiatives.</p>
 </section>
+<?php endif; ?>
 <section class="home-section" id="experience">
     <?php sectionHeading('03','professional experience','full experience','professional-experience.php'); ?>
     <article class="work-spotlight">
